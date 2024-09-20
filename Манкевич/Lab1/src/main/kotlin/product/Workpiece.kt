@@ -25,9 +25,9 @@ class Product(private var isReady:Boolean=true){
     fun isReady(): Boolean {
         return isReady
     }
-    fun setProductReady(ready: Boolean) {  // Публичный метод для установки готовности
+    fun setProductReady(ready: Boolean) {
         isReady = ready
-        checkReadiness()  // Вызываем приватный метод для проверки состояния
+        checkReadiness()
     }
 
     private fun checkReadiness(){
